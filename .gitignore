@@ -1,2 +1,4 @@
-/bin/Debug/net8.0
-/obj
+/obj/*
+/bin/*
+bin/
+obg/
