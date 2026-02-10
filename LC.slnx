@@ -1,4 +1,3 @@
 <Solution>
   <Project Path="LC.Exercices/LC.Exercices.csproj" />
-  <Project Path="LC.Test/LC.Test.csproj" />
 </Solution>
