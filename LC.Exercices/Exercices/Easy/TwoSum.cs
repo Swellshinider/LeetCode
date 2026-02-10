@@ -1,8 +1,16 @@
-﻿namespace LC.Exercices.Exercices.Easy;
+﻿using BenchmarkDotNet.Attributes;
 
-public static class TwoSum
+namespace LC.Exercices.Exercices.Easy;
+
+[MemoryDiagnoser]
+public class TwoSum
 {
-    public static int[] Solution(int[] nums, int target)
+    [Benchmark]
+    [BenchmarkCategory("Easy")]
+    [Arguments(new int[] { 2, 7, 11, 15 }, 9)]
+    [Arguments(new int[] { 3, 2, 4 }, 6)]
+    [Arguments(new int[] { 3, 3 }, 6)]
+    public int[] Solution(int[] nums, int target)
     {
         var hashMap = new Dictionary<int, int>();
 
